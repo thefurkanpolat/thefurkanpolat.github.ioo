@@ -1,0 +1,264 @@
+body{
+	margin:0;
+  padding:0;
+  font-family: 'Comic Neue', cursive;
+
+}
+.header{
+	width: 100%;
+	background:#000;
+	position: fixed;
+	top:0;
+	z-index: 9;
+	opacity: 0.5;
+  transition: all .2s;
+
+}
+.header:hover{
+	opacity: 1;
+  transition: all .2s;
+
+
+	}
+.logo{
+  width:30%;
+  height: 10%;
+	float:left;
+	padding:20px;
+	font-size:30px;
+	line-height:60px;
+	color:#fff;
+	line-height:80px;
+}
+.menu{
+	width:62%;
+	float:left;
+  padding:20px;
+  font-family: 'Comic Neue', cursive;
+
+}
+.clearboth{
+	clear:both;
+}
+.menu ul{
+	float:right;
+}
+.menu ul li{
+	float:left;
+	margin:15px;
+}
+.menu ul li a{
+	color:#fff;
+	text-decoration: none;
+}
+.metin{
+	width:800px;
+	margin:0 auto;
+  text-align: center;
+  font-family: 'Comic Neue', cursive;
+
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  font-family: 'Comic Neue', cursive;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(3, 76, 99);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: #000000cc;
+}
+
+
+.text {
+    color: #dee8e9;
+    font-size: 59px;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    left: -30%;
+    font-family: 'Comic Neue', cursive;
+
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  font-family: 'Comic Neue', cursive;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {
+  	font-size: 11px
+  }
+}
+.iletisim{
+	background:rgb(132, 160, 243);
+	padding:50px 250px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Comic Neue', cursive;
+
+}
+
+input[type=submit] {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Comic Neue', cursive;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+img{
+	width: 100%;
+}
+.footer{
+	text-align: center;
+	padding-top:20px;
+	color:#000;
+  background:#b6b6b6;
+  font-family: 'Comic Neue', cursive;
+  border: 10px;
+  margin-left: 1px;
+  margin: 0 10px 0 0 ;
+
+
+}
+.sosyal{
+    width: 150px;
+    margin: 0px auto;
+    margin-top:13px;
+}
+.sosyal span{
+	width: 50px;
+    height: 50px;
+    display: block;
+    float: left;
+  }
+@media only screen and (max-width: 900px) {
+
+	.text {
+    color: #f2f2f2;
+    font-size: 59px;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 37%;
+    width: 100%;
+    text-align: center;
+    left: -15%;
+    font-family: 'Comic Neue', cursive;
+
+	}
+	.metin {
+      width: 95%;
+      font-family: 'Comic Neue', cursive;
+
+	}
+	.logo {
+    	width: 26%;
+	}
+	.iletisim {
+	    background: rgb(111, 140, 226);
+	    padding: 50px 50px;
+	}
+}
+@media only screen and (max-width: 670px) {
+	.logo{
+		width:100%;
+		text-align: center;
+	}
+	.menu{
+		width:100%;
+		text-align: center;
+	}
+	.menu ul {
+	    float: none;
+	    margin: 0px;
+	    padding: 0px;
+}
+	.menu ul li {
+    float: left;
+    margin: 0px 8px;
+	}
+}

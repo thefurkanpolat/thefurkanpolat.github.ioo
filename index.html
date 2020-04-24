@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FURKAN POLAT</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/favicon.png" type="img/image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<div class="logo">Software Developer</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Anasayfa</a></li>
+				<li><a href="#">Hakkımda</a></li>
+				<li><a href="#">Galeri</a></li>
+				<li><a href="#">İletişim</a></li>
+				<div class="clearboth"></div>
+			</ul>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+
+	<div class="slider">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="img/1.jpg" style="width:100%">
+			  <div class="text">Merhabalar</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="img/2.jpg" style="width:100%">
+			  <div class="text">Merhabalar</div>
+			</div>
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="img/3.jpg" style="width:100%">
+			  <div class="text">Merhabalar</div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+	</div>
+	<div class="metin">		<h1>Merhabalar</h1>
+
+		<p>Blog sayfam tamamlanma aşamasındadır.</p>
+	</div>
+	<div class="iletisim">
+		  <form>
+		    <label for="fname">Adınız</label>
+		    <input type="text" id="ad" name="adı" placeholder="Adınız..">
+
+		    <label for="lname">Soyadınız</label>
+		    <input type="text" id="sad" name="soyadı" placeholder="Soyadınız..">
+
+		    <label for="ulke">Ülke</label>
+		    <select id="ulke" name="country">
+		      <option value="tr">Türkiye</option>
+		      <option value="kanada">Kanada</option>
+			  <option value="tr">Avusturalya</option>
+			  <option value="ger">Almanya</option>
+		      <option value="au">İtalya</option>
+			  <option value="au">İngiltere</option>
+			  <option value="abd">Amerika</option>
+
+		    </select>
+
+		    <label for="subject">Mesaj</label>
+		    <textarea id="mesaj" name="mesaj" placeholder="Mesajınızı Buraya Bırakınız..." style="height:200px"></textarea>
+
+		    <input type="submit" value="GÖNDER">
+		  </form>
+	</div>
+	<div class="footer">
+		<div class="footer-text">Build with ❤ by Furkan Polat</div>
+		<div class="sosyal">
+			<a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/thefurkanpolat"><i class="img/instagram.png" aria-hidden="true"></i></a>
+			<span class="facebook"><a href=""><img src="img/facebook.png"></a></span>
+			<span class="github"><a href=""><img src="img/github.png"></a></span>
+			<span class="twitter"><a href="https://www.twitter.com/thefurkanpolat"><img src="img/twitter.png"></a></span>
+			<div class="clearboth"></div>
+		</div>
+	</div>
+</body>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</html>
